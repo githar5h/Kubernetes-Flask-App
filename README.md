@@ -1,3 +1,26 @@
+# Kubernetes Flask App
+This repository provides a comprehensive guide to deploying a Python-based Flask application integrated with MongoDB in a containerized and Kubernetes environment. It covers the following:
+
+### Features:
+
+- **Virtual Environment Benefits:** Explains the importance of using virtual environments for dependency management, reproducibility, and system integrity.
+  
+- **Containerization with Docker:**
+  - Includes a sample `Dockerfile` for building Flask application images.
+  - Step-by-step instructions to build and push Docker images to a container registry.
+
+- **Kubernetes Deployment:**
+  - YAML files for deploying Flask and MongoDB using `Deployments`, `StatefulSets`, `Services`, and `Persistent Volumes`.
+  - Details on setting up DNS for inter-pod communication and managing resource requests and limits.
+
+- **Design Highlights:**
+  - Persistent storage for MongoDB using StatefulSets.
+  - Autoscaling Flask pods with Horizontal Pod Autoscaler (HPA) based on traffic.
+  - Clear design choices tailored for local development using Minikube.
+
+- **Testing Scenarios:**
+  - Load-testing Flask and MongoDB to simulate high traffic and database operations.
+  - Monitoring HPA and MongoDB performance under stress.
 
 ### Benefits of Using a Virtual Environment for Python Applications
 
